@@ -1,6 +1,7 @@
 # Convenient crafting datapack
 
 Convenient crafting, Quality of Life, balancing
+
 Overall a more pleasant and easier Minecraft
 
 ## Some rules
