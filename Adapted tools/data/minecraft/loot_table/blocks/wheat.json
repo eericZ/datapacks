@@ -1,0 +1,261 @@
+{
+	"type": "minecraft:block",
+	"functions": [
+		{
+			"function": "minecraft:explosion_decay"
+		}
+	],
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"conditions": [
+								{
+									"block": "minecraft:wheat",
+									"condition": "minecraft:block_state_property",
+									"properties": {
+										"age": "7"
+									}
+								}
+							],
+							"name": "minecraft:wheat"
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:wheat_seeds"
+						}
+					]
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"bonus_rolls": 0.0,
+			"conditions": [
+				{
+					"block": "minecraft:wheat",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "7"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:binomial_with_bonus_count",
+							"function": "minecraft:apply_bonus",
+							"parameters": {
+								"extra": 3,
+								"probability": 0.5714286
+							}
+						}
+					],
+					"name": "minecraft:wheat_seeds"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"block": "minecraft:wheat",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "7"
+					}
+				},
+				{
+					"entity": "this",
+					"condition": "entity_properties",
+					"predicate": {
+						"equipment": {
+							"mainhand": {
+								"items": "minecraft:wooden_hoe"
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"block": "minecraft:wheat",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "7"
+					}
+				},
+				{
+					"condition": "any_of",
+					"terms": [
+						{
+							"entity": "this",
+							"condition": "entity_properties",
+							"predicate": {
+								"equipment": {
+									"mainhand": {
+										"items": "minecraft:stone_hoe"
+									}
+								}
+							}
+						},
+						{
+							"entity": "this",
+							"condition": "entity_properties",
+							"predicate": {
+								"equipment": {
+									"mainhand": {
+										"items": "minecraft:iron_hoe"
+									}
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat"
+				}
+			],
+			"rolls": 2.0
+		},
+		{
+			"conditions": [
+				{
+					"block": "minecraft:wheat",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "7"
+					}
+				},
+				{
+					"condition": "any_of",
+					"terms": [
+						{
+							"entity": "this",
+							"condition": "entity_properties",
+							"predicate": {
+								"equipment": {
+									"mainhand": {
+										"items": "minecraft:diamond_hoe"
+									}
+								}
+							}
+						},
+						{
+							"entity": "this",
+							"condition": "entity_properties",
+							"predicate": {
+								"equipment": {
+									"mainhand": {
+										"items": "minecraft:netherite_hoe"
+									}
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat"
+				}
+			],
+			"rolls": 3.0
+		},
+		{
+			"conditions": [
+				{
+					"block": "minecraft:wheat",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "7"
+					}
+				},
+				{
+					"entity": "this",
+					"condition": "entity_properties",
+					"predicate": {
+						"equipment": {
+							"mainhand": {
+								"items": "minecraft:golden_hoe"
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat"
+				}
+			],
+			"rolls": 5.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"effects": {
+							"minecraft:luck": {
+								"amplifier": 0
+							}
+						}
+					}
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:wheat"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"effects": {
+							"minecraft:luck": {
+								"amplifier": 1
+							}
+						}
+					}
+				}
+			],
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:wheat"
+				}
+			]
+		}
+	],
+	"random_sequence": "minecraft:blocks/wheat"
+}
