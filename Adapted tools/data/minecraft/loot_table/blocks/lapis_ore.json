@@ -22,7 +22,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:copper_ore"
+          "name": "minecraft:lapis_ore"
         }
       ],
       "rolls": 1
@@ -54,7 +54,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:raw_copper",
+              "name": "minecraft:lapis_lazuli",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -128,13 +128,13 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:raw_copper",
+              "name": "minecraft:lapis_lazuli",
               "functions": [
                 {
                   "function": "set_count",
                   "count": {
-                    "max": 2,
-                    "min": 1,
+                    "min": 2,
+                    "max": 5,
                     "type": "minecraft:uniform"
                   }
                 }
@@ -155,13 +155,13 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:raw_copper",
+              "name": "minecraft:lapis_lazuli",
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "max": 4,
-                    "min": 2,
+                    "max": 8,
+                    "min": 4,
                     "type": "minecraft:uniform"
                   }
                 }
@@ -217,8 +217,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "max": 5,
-                "min": 2,
+                "max": 9,
+                "min": 4,
                 "type": "minecraft:uniform"
               }
             },
@@ -227,10 +227,10 @@
             }
           ],
           "type": "minecraft:item",
-          "name": "minecraft:raw_copper"
+          "name": "minecraft:lapis_lazuli"
         }
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/copper_ore"
+  "random_sequence": "minecraft:blocks/lapis_ore"
 }
