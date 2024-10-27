@@ -12,4 +12,5 @@ Avoid creative specific elements like Minecart with command block, or structure 
 - `#coussin_pillow:decoration`: includes all decorative entities
 - `#coussin_pillow:enemy`: include all entities that are considered enemies, like: zombies, illagers, endermen, wither...
 - `#coussin_pillow:minecart`: include all minecarts (except creative specific items)
+- `#coussin_pillow:non_living`: include all entities that are not considered alive
 - `#coussin_pillow:projectile`: include all projectiles (arrow, thrown snowballs or tridents, dragon fireball)

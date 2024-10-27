@@ -1,0 +1,14 @@
+{
+	"values": [
+		"#minecraft:boat",
+		"minecraft:end_crystal",
+		"minecraft:experience_orb",
+		"minecraft:falling_block",
+		"minecraft:item",
+		"minecraft:lightning_bolt",
+		"minecraft:leash_knot",
+		"#coussin_pillow:decoration",
+		"#coussin_pillow:minecart",
+		"#coussin_pillow:projectile"
+	]
+}
