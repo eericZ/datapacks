@@ -1,0 +1,261 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "minecraft:beetroots",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "name": "minecraft:beetroot"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:beetroot_seeds"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "function": "minecraft:apply_bonus",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "minecraft:beetroot_seeds"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        },
+        {
+          "entity": "this",
+          "condition": "entity_properties",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:wooden_hoe"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        },
+        {
+          "condition": "any_of",
+          "terms": [
+            {
+              "entity": "this",
+              "condition": "entity_properties",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:stone_hoe"
+                  }
+                }
+              }
+            },
+            {
+              "entity": "this",
+              "condition": "entity_properties",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:iron_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot"
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        },
+        {
+          "condition": "any_of",
+          "terms": [
+            {
+              "entity": "this",
+              "condition": "entity_properties",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:diamond_hoe"
+                  }
+                }
+              }
+            },
+            {
+              "entity": "this",
+              "condition": "entity_properties",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:netherite_hoe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot"
+        }
+      ],
+      "rolls": 3.0
+    },
+    {
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        },
+        {
+          "entity": "this",
+          "condition": "entity_properties",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:golden_hoe"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot"
+        }
+      ],
+      "rolls": 5.0
+    },
+    {
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:luck": {
+                "amplifier": 0
+              }
+            }
+          }
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:beetroot"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:luck": {
+                "amplifier": 1
+              }
+            }
+          }
+        }
+      ],
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:beetroot"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/beetroots"
+}
