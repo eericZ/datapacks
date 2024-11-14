@@ -14,6 +14,10 @@ Correct tools yields more resources
 
 Recipes that make minecraft easier
 
+### [Creative ready](Creative%20ready/README.md)
+
+Sets the default values for some gamerules for any creative world, like a redstone world
+
 ### [More tags](More%20tags/README.md)
 
 More tags for easier targeting with commands
