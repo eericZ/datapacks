@@ -8,9 +8,9 @@ Avoid creative specific elements like Minecart with command block, or structure 
 
 ## New tags
 
-- `#coussin_pillow:animal`: includes all real-lifish animals, passive or not
-- `#coussin_pillow:decoration`: includes all decorative entities
-- `#coussin_pillow:enemy`: include all entities that are considered enemies, like: zombies, illagers, endermen, wither...
-- `#coussin_pillow:minecart`: include all minecarts (except creative specific items)
-- `#coussin_pillow:non_living`: include all entities that are not considered alive
-- `#coussin_pillow:projectile`: include all projectiles (arrow, thrown snowballs or tridents, dragon fireball)
+- `#more_tags:animal`: includes all real-lifish animals, passive or not
+- `#more_tags:decoration`: includes all decorative entities
+- `#more_tags:enemy`: include all entities that are considered enemies, like: zombies, illagers, endermen, wither...
+- `#more_tags:minecart`: include all minecarts (except creative specific items)
+- `#more_tags:non_living`: include all entities that are not considered alive
+- `#more_tags:projectile`: include all projectiles (arrow, thrown snowballs or tridents, dragon fireball)

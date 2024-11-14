@@ -7,8 +7,8 @@
 		"minecraft:item",
 		"minecraft:lightning_bolt",
 		"minecraft:leash_knot",
-		"#coussin_pillow:decoration",
-		"#coussin_pillow:minecart",
-		"#coussin_pillow:projectile"
+		"#more_tags:decoration",
+		"#more_tags:minecart",
+		"#more_tags:projectile"
 	]
 }

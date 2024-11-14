@@ -1,6 +1,6 @@
 {
 	"values": [
-		"coussin_pillow:load"
+		"redstone_utils:load"
 	],
 	"replace": false
 }
