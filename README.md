@@ -18,6 +18,10 @@ Recipes that make minecraft easier
 
 Sets the default values for some gamerules for any creative world, like a redstone world
 
+### [Hotbar swap](Hotbar%20swap/README.md)
+
+Swap items in the hotbar with a trigger command
+
 ### [More tags](More%20tags/README.md)
 
 More tags for easier targeting with commands
