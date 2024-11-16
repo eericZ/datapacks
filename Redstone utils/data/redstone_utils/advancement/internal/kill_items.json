@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": "minecraft:barrier",
+					"components": {
+						"minecraft:custom_data": {
+							"action": "kill_items"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "redstone_utils:kill_items"
+	}
+}

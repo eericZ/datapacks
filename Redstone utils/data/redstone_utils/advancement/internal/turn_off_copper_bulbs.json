@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": "minecraft:copper_bulb",
+					"components": {
+						"minecraft:custom_data": {
+							"action": "turn_off_copper_bulbs"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "redstone_utils:turn_off_copper_bulbs"
+	}
+}
